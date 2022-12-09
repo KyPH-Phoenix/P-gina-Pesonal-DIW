@@ -1,0 +1,40 @@
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {   
+    --asideWidth: 300px;
+    --c-black: #1a1a1a;
+    --c-white: #e1e1e1;
+    --c-grey: #898989;
+    --c-purple: #b462ff;
+    --c-fuschia: #ff45b4;
+    --c-blue: #18b6ff;
+    --c-green: #1beb9e;
+    --c-orange: #ff9528;
+    --c-yellow: #dddd25;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: var(--c-black);
+    color: var(--c-white);
+}
+
+#barraLateral {
+    width: var(--asideWidth);
+}
+
+#main {
+    width: calc(100% - var(--asideWidth));
+}
+
+main > section:not(:target) {
+    display: none;
+} 
+
+main h3 {
+    color: var(--c-yellow);
+}

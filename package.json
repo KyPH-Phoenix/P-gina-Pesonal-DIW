@@ -1,0 +1,30 @@
+{
+  "name": "pagina-personal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve src/index.html --public-url / --dist-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyPH-Phoenix/P-gina-Pesonal-DIW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyPH-Phoenix/P-gina-Pesonal-DIW/issues"
+  },
+  "homepage": "https://github.com/KyPH-Phoenix/P-gina-Pesonal-DIW#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "@parcel/transformer-webmanifest": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
