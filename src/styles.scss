@@ -9,9 +9,10 @@
     --c-purple: #b462ff;
     --c-fuschia: #ff45b4;
     --c-blue: #18b6ff;
-    --c-green: #1beb9e;
+    --c-green: #0aa85e;
     --c-orange: #ff9528;
     --c-yellow: #dddd25;
+    --c-red: rgb(221, 45, 45);
 }
 
 body {
@@ -41,10 +42,11 @@ main > section:not(:target) {
 
 main > section {
     padding-top: 20px;
+    animation: opac 0.8s;
 }
 
 main h3 {
-    color: var(--c-yellow);
+    color: var(--c-green);
 }
 
 main {
@@ -62,11 +64,45 @@ aside ul li {
 
 li a {
     text-decoration: none;
-    color: var(--c-purple);
+    color: var(--c-green);
 }
 
 li a:hover {
-    background-color: var(--c-purple);
+    background-color: var(--c-green);
     color: var(--c-black);
 }
 
+#github {
+    color: var(--c-blue);
+}
+
+#github:hover {
+    background-color: var(--c-blue);
+    color: var(--c-black);
+}
+
+#youtube {
+    color: var(--c-red);
+}
+
+#youtube:hover {
+    background-color: var(--c-red);
+    color: var(--c-black);
+}
+
+#email {
+    color: var(--c-yellow);
+}
+
+#telefono {
+    color: var(--c-orange);
+}
+
+@keyframes opac{
+    from{
+        opacity:0
+    } 
+    to{
+        opacity:1
+    }
+}
