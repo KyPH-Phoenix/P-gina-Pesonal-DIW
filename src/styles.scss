@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {   
-    --asideWidth: 300px;
+    --asideWidth: 250px;
     --c-black: #1a1a1a;
     --c-white: #e1e1e1;
     --c-grey: #898989;
@@ -16,25 +16,57 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
+    padding: 0 20px 0;
     width: 100vw;
     height: 100vh;
-    padding: 20px;
     background-color: var(--c-black);
     color: var(--c-white);
 }
 
 #barraLateral {
+    padding-top: 20px;
     width: var(--asideWidth);
+    position: fixed;
 }
 
 #main {
     width: calc(100% - var(--asideWidth));
+    margin-left: var(--asideWidth);
+    padding-right: 20px;
 }
 
 main > section:not(:target) {
     display: none;
 } 
 
+main > section {
+    padding-top: 20px;
+}
+
 main h3 {
     color: var(--c-yellow);
 }
+
+main {
+    text-align: justify;
+}
+
+aside ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+aside ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--c-purple);
+}
+
+li a:hover {
+    background-color: var(--c-purple);
+    color: var(--c-black);
+}
+

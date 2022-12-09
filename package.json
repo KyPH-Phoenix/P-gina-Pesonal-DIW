@@ -19,7 +19,9 @@
   "homepage": "https://github.com/KyPH-Phoenix/P-gina-Pesonal-DIW#readme",
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "prettier": "^2.7.1"
+    "jquery": "^3.6.1",
+    "prettier": "^2.7.1",
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.7.0",

@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="styles.scss">
 </head>
 
-<body class="d-flex flex-row justify-content-reverse-start">
+<body class="d-flex flex-row justify-content-reverse-start" onload="goToPage()">
     <aside id="barraLateral">
         <h3>Hugo Notario Fructuoso</h3>
         <section>
             <ul>
                 <li><a href="#curriculum">Curriculum</a></li>
-                <li><a href="#proyectos">cosa 2</a></li>
-                <li><a href="">cosa 2</a></li>
-                <li><a href="">cosa 2</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </section>
     </aside>
@@ -67,7 +66,83 @@
             </p>
         </section>
 
+        <section id="proyectos">
+            <h1 class="text-center">Proyectos</h1>
+            <section>
+                <h3>Proyectos de Java</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/KyPH-Phoenix/Desenvolupament-Web-en-Entorns-Servidor-GS2022/tree/main/Intellij/PrimeraPracticaObligatoria-Figures" target="_blank">
+                            Figures - Java, Javascript, Servlets
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/KyPH-Phoenix/Desenvolupament-Web-en-Entorns-Servidor-GS2022/tree/main/Intellij/SegonaPracticaObligatoria-Maze" target="_blank">
+                            Maze - Java, Javascript, SQL, Servlets
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/KyPH-Phoenix/Programacio-GS2021/tree/main/Proyectos%20intellij/Barcode" target="_blank">
+                            Barcode - Java
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Proyectos de Javascript</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/KyPH-Phoenix/Clock-DIW-DAWC">
+                            Clock - Javascript, CSS
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Proyectos WEB</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/KyPH-Phoenix/Pagina-Web-Restaurant">
+                            Restaurant WebPage - CSS, Bootstrap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cybergarden2077.netlify.app/">
+                            Pagina De Jardineria - CSS, Bootstrap
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="contacto">
+            <h1 class="text-center">Contacto</h1>
+            <ul>
+                <li>
+                    <a href="" id="github">GitHub</a>
+                </li>
+                <li>
+                    <a href="" id="youtube">Canal de YouTube</a>
+                </li>
+                <li>
+                    <span id="email">hnotariof@gmail.com</span>
+                </li>
+                <li>
+                    <span id="telefono">+34 689 364 281</span>
+                </li>
+            </ul>
+        </section>
     </main>
+
+    <script>
+        function goToPage() {
+            if (window.location.hash == "") {
+                window.location.assign("#curriculum");
+            }
+        }
+    </script>
 
     <!-- Scripts Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
