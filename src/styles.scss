@@ -26,14 +26,16 @@ body {
 
 #barraLateral {
     padding-top: 20px;
-    width: var(--asideWidth);
-    position: fixed;
+    width: 100%;
+    height: fit-content;
 }
 
 #main {
-    width: calc(100% - var(--asideWidth));
-    margin-left: var(--asideWidth);
-    padding-right: 20px;
+    width: 100%;
+    margin-top: 160px;
+    position: absolute;
+    left: 20px;
+    padding-right: 40px;
 }
 
 main > section:not(:target) {
@@ -94,9 +96,20 @@ li a:hover {
     color: var(--c-yellow);
 }
 
+#email:hover {
+    background-color: var(--c-yellow);
+    color: var(--c-black);
+}
+
 #telefono {
     color: var(--c-orange);
 }
+
+#telefono:hover {
+    background-color: var(--c-orange);
+    color: var(--c-black);
+}
+
 
 @keyframes opac{
     from{
@@ -104,5 +117,20 @@ li a:hover {
     } 
     to{
         opacity:1
+    }
+}
+
+@media screen and (min-width: 550px) {
+    #main {
+        width: calc(100% - var(--asideWidth));
+        margin-left: var(--asideWidth);
+        padding-right: 40px;
+        margin-top: 0;
+    }
+
+    #barraLateral {
+        padding-top: 20px;
+        width: var(--asideWidth);
+        position: fixed;
     }
 }
